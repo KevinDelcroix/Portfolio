@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1f1f1f;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===================
+   Projects
+   =================== */
+
+/* Styles généraux */
+.projects {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+.projects h2 {
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9); /* Ajout du contour noir */
+}
+
+.projects-container {
+  display: grid;
+  justify-content: center; /* Centre les cartes dans la grille */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Crée autant de colonnes que possible avec une largeur minimale de 280px*/
+  column-gap: 20px; /* Espace horizontal entre les cartes */
+  row-gap: 40px; /* Espace vertical entre les lignes */
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+
+.project-card {
+  flex: 0 0 calc(32% - 40px); /* Trois cartes visibles */
+  min-width: 280px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin: 10px 0 8px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f39c12;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.experience,
+.skills,
+.hobbies-list,
+.languages-list {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.skills div {
+  margin-bottom: 15px;
+}
+
+.skills h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+.degree-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.degree-info {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.hobbies-list li,
+.languages-list li {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #1f1f1f;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Effet de survol sur les projets */
+.project {
+    background: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8);
+}
+
+/* Animation d’apparition des sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Rendre les liens interactifs */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animation du menu */
+nav ul li {
+    transition: transform 0.2s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+#typing-text {
+    font-size: 18px;
+    white-space: pre-line; /* Respecte les sauts de ligne */
+    overflow: hidden;
+    display: inline-block;
+    position: relative; /* Permet de positionner le curseur */
+}
+
+#typing-text::after {
+    content: "|"; /* Curseur clignotant */
+    position: absolute;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
