@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmobot</title>
+    <link rel="icon" type="image/x-icon" href="images/FarmoProd.ico">
+    <link rel="stylesheet" href="FarmoStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--
+/* ===================
+   Header
+   =================== */-->
+
+	<header>
+    		<a href="#">
+        		<img src="images/FarmoBotGameLogo.png" alt="Farmobot Logo" id="logo">
+    		</a>
+    		<nav>
+        		<ul>
+            			<li><a href="../index.html">Accueil</a></li>
+            			<li><a href="#trailer">Trailer</a></li>
+          			<li><a href="#FarmoLore">Lore</a></li>
+          			<li><a href="#modules">Modules</a></li>
+          			<li><a href="#FarmoGameplay">Gameplay</a></li>
+          			<li><a href="#my-work">My Work</a></li>
+          			<li><a href="#other-projects">Other projects</a></li>
+          			<li><a href="#download">Try Game</a></li>
+            			<li><a href="#team">Équipe</a></li>
+        		</ul>
+    		</nav>
+	</header>
+
+<!--
+/* ===================
+   Trailer
+   =================== */-->
+
+    <section id="trailer">
+        <h2>Trailer du jeu</h2>
+
+        <div class="video-container">
+            <div class="video-overlay">
+                <button class="play-button">▶</button>
+            </div>
+            <iframe src="https://www.youtube.com/embed/jF8PSLQR7h0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+<!--
+/* ===================
+   FarmoLore
+   =================== */-->
+
+    <section id="FarmoLore">
+        <h2>Lore</h2>
+        <p>Farmobot is a game combining agricultural simulation and robotics, offering players an immersive experience of automated farm management.</p>
+        <img src="images/FarmoBotGameLogo.png" alt="Logo de Farmobot">
+        <p>Montana, 2059. A few mechanics fled their sci-fi society to build a farm with their mechs on an abandoned golf course. One day, R1, the Robo-Mayor of a nearby city, comes to play golf after many years of hard work. Surprised by the presence of the farmers, he's determined to expel them with the help of his minions. To protect all they've built, our farmers have no choice harvest enough com to buy the land before R1 comes back.</p>
+        <img src="images/Farmobot_Wallpaper.png" alt="Capture d'écran de Farmobot">
+        <p>Enter Farm O'Bot in this 3rd person cooperative arcade game, where, along with your friends, you'll embody mech-piloting farmers that need to raise and defend their crops using agricultural modules. Plant, water, collect and store your corn with the help of your companions before the due date, and kick the enemies out of your fields. Be careful though, your mechs ain't made for mass production and fires may occasionally occur.</p>
+    </section>
+
+<!--
+/* ===================
+   Modules
+   =================== */-->
+	
+    <section id="modules">
+        <h2>Modules</h2>
+        <p>To interact with them, players can pick up and equip 3 different agricol modules: The Super Vacuum, The Ultimate Spreader and The Turbo Harvester. To accentuate their quirky side and make them easily recognizable, we've put forward a distinctive element and a color that matches their action.</p>
+        <img src="images/Farmobot_ArtBook.png" alt="Farmobot ArtBook">
+        <section id="image_on_right" class="module-block">
+              <p><strong>Vacuum: Plant</strong><br><br> The Super Vacuum helps players to shoot huge bags of seed to plant a large area. We chose to use a big painted canon to emphasize the homemade aspect and the high mood of the action.</p>
+              <div class="media-hover image-right">
+                      <img src="images/vaccum.png" alt="Vacuum module">
+                      <video class="hover-video" muted loop preload="none">
+                              <source src="images/Plant.mp4" type="video/mp4">
+                      </video>
+              </div>
+        </section>
+
+        <section id="image_on_left" class="module-block image-left">
+              <p><strong>Spreader: Watering</strong><br><br> The Ultimate Spreader can project a large flow of water to grow plants. It also helps players to extinguish the fire. We were inspired by Mario Sunshine's JET and combined it with the image of a duck buoy to recall the module's aquatic side.</p>
+              <div class="media-hover image-left">
+                      <img src="images/Spreader.png" alt="Spreader module">
+                      <video class="hover-video" muted loop preload="none">
+                              <source src="images/Grow.mp4" type="video/mp4">
+                      </video>
+              </div>
+        </section>
+
+        <section id="image_on_right" class="module-block image-right">
+              <p><strong>Harvester: Harvest</strong><br><br> With the Turbo Harvester, players can run through the field and cut everything on their way, which leaves pieces of corn behind. We've taken the image of the classic combine harvester and brought the clanky mood of Farmobot with external motors and rusty blades.</p>
+              <div class="media-hover image-right">
+                      <img src="images/Harvester.png" alt="Harvester module">
+                      <video class="hover-video" muted loop preload="none">
+                              <source src="images/Cut.mp4" type="video/mp4">
+                      </video>
+              </div>
+        </section>
+
+        <section id="image_on_left" class="module-block image-left">
+              <p><strong>Vacuum: Collect</strong><br><br> Finally, the Super Vacuum can collect corn dropped on the floor to compact it and create bales. To give a good idea of this action, we've fitted it with a large nozzle inspired by Luigi’s Ectoblast.</p>
+              <div class="media-hover image-left">
+                      <img src="images/vaccum.png" alt="Vacuum module">
+                      <video class="hover-video" muted loop preload="none">
+                              <source src="images/vaccum.mp4" type="video/mp4">
+                      </video>
+              </div>
+        </section>
+
+        <p><strong>Overheat Modules</strong><br> But be careful, when you use them, they slowly overheat. If they overheat too much they will produce a huge fire burst and spread it in your field. To cool modules down you can drop them on the floor or pass them to a friend which fully refreshes the module.</p>
+        <p>These modules are very useful but can be a menace if you don't use them correctly.</p>
+    </section>
+
+<!--
+/* ===================
+   FarmoGameplay
+   =================== */-->
+
+    <section id="FarmoGameplay">
+        <h2>Gameplay</h2>
+        <p>You play as 3 mech-farmers cooperating against the bad guy (R1) for your land. You will have to fullfill corn orders in a limited time to keep playing. Delivering in time gives you a medal for the selected map. There are multiple medals you can get as the difficulty increases. To complete an order, you must make corn bales and put them in the storage place. There are three mandatory steps: grabbing modules, farming the fields and transporting the bale to the silo.</p>
+        <div class="video-container">
+            <div class="video-overlay">
+                <button class="play-button">▶</button>
+            </div>
+            <iframe src="https://www.youtube.com/embed/tUfGXGAdcrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+    </section>
+
+<!--
+/* ===================
+   My Work
+   =================== */-->
+
+    <section id="my-work">
+        <h2>My Work on the Project</h2>
+        <article>
+            <p>This project, developed using Unreal Engine, allowed me to deepen my technical skills in various areas including multiplayer, field cultivation, user interface, player customization, and the development of internal tools dedicated to playtest analysis. I also actively contributed to the prototyping phases.</p>
+        </article>
+        <h3>Multiplayer</h3>
+        <p>This wasn’t my first multiplayer project on Unreal Engine (see SuperTag), which helped me save a lot of time. I already had a solid grasp of replication, connection handling, and data synchronization between clients and server. This allowed me to focus on more advanced topics such as network optimization and system robustness. The main challenge was ensuring a smooth experience, even during sessions where multiple players interacted simultaneously with the same objects.</p>
+        <h3>Field Cultivation</h3>
+        <p>The crop system was based on a per-field manager that controlled all associated sprouts. These were generated dynamically if the terrain texture matched the expected one — which allowed for more organic and realistic plantations.</p>
+        <p>Each sprout was implemented as a particle using the Niagara System, providing good performance for visual rendering. However, interacting with the fields, combined with AI also managed by Niagara, quickly became resource-intensive.</p>
+        <img src="images/NiagaraField.png" alt="Champs gérés par Niagara">
+        <p> My colleague Jean-Baptiste Oses took over and migrated all logic directly into Niagara, significantly optimizing performance. 
+            <a href="https://modacless.github.io/farmobot" target="_blank" style="color: #ffffff; text-decoration: underline;"> His portfolio offers more technical insight on this aspect.</a>
+        </p>
+        <h3>User Interface (UI)</h3>
+        <p>Unlike SuperTag, this project brought new challenges in terms of UI. I learned how to better manage Blueprint Widgets, structure menus in a modular way, and ensure multiplayer compatibility of UI elements. It was a revelation for me — I developed a real passion for interface creation, both functionally and artistically.</p>
+        <h3>Player Customization</h3>
+        <p>As the game was played in third-person multiplayer, it was essential to allow players to customize their avatars. Even though it was a first for me, the integration went smoothly. I used several Unreal features such as:</p>
+        <ul>
+            <li><strong>GameInstanceSubsystems</strong> to store selected options (colors, accessories, name...)</li>
+            <li><strong>Dynamic Materials</strong> for real-time appearance updates</li>
+            <li>A <strong>Save/Load system</strong> to retain player preferences across sessions</li>
+        </ul>
+        <h3>Playtest Analysis Tools</h3>
+        <p>Given the arcade multiplayer nature of the game, collecting data was crucial to properly balance the experience. My task was to design an analysis tool that captured key events in real time during playtest sessions.</p>
+        <p>I implemented a manager triggered on every significant action (shooting, moving, eliminating, interacting, etc.). This system logged data such as:</p>
+        <ul>
+            <li>Type of event</li>
+            <li>Timestamp</li>
+            <li>Involved player</li>
+            <li>Map position</li>
+            <li>Other relevant information (game state, used modules, etc.)</li>
+        </ul>
+        <p>These data were exported to Excel spreadsheets for analysis by game designers. However, Excel quickly proved to be impractical for fluid and visual analysis.</p>
+        <p>I therefore took the initiative to develop a tool directly integrated into the Unreal Editor. It included two complementary modules:</p>
+        <ul>
+            <li><strong>Spatial visualization:</strong> This tool retraced player and entity movements (modules, AI, interactables, etc.) across the map. It also displayed specific events (interactions, deaths, state changes, skill triggers...) at their locations. This offered a dynamic overview of the session, helping to identify hotspots or issues.</li>
+            <img src="images/Data_Analysis.png" alt="Data Analyse">
+            <li><strong>Interactive timeline:</strong> This view provided a chronological sequence of the match’s events. Designers could review actions in order with timestamps, positions, and the game state at each moment. It allowed them to mentally replay a session step by step.</li>
+        </ul>
+        <p>These tools significantly improved playtest analysis. The second tool, although more complex to develop, was the one most used by designers on a daily basis.</p>
+        <h3>Prototyping</h3>
+        <p>As with any project, several prototypes were needed before reaching the final version. These stages were highly formative — they allowed me to explore different ideas and quickly test their viability. I notably worked on:</p>
+        <ul>
+            <li>A modular AI system with detachable parts</li>
+            <li>A multiplayer tower defense prototype</li>
+            <li>Asynchronous gameplay mechanics</li>
+        </ul>
+        <p>These experiments helped me gain versatility and execution speed.</p>
+
+        <h3>Conclusion</h3>
+        <p>Throughout this project, I tackled diverse and often new technical challenges. From multiplayer to UI, internal tools to data management — each hurdle was a concrete learning opportunity. This experience strengthened my belief that Unreal Engine game development is both demanding and deeply rewarding.</p>
+          <img src="images/Farmobot_Mech.png" alt="Mech de Farmobot">
+    </section>
+
+<!--
+/* ===================
+   Other Projects
+   =================== */-->
+
+    <section id="other-projects" class = "other-projects">
+        <h2>My Other Projects</h2>   
+        <div class="projects-container" id="carouselTrack">
+
+            <a href="../WTW/WTW.html" class="project-card">
+                <img src="images/WTW_Hero.png" alt="Wall Town Wonders">
+                <h3>Wall Town Wonders</h3>
+                <p>Wall Town Wonders is a mixed reality game that transforms your living room into a lively miniature city. Help colorful characters build their world through...</p>
+            </a>
+
+            <a href="../Farmobot/Farmobot.html" class="project-card">
+                <img src="images/Farmobot_Logo.png" alt="FarmoBot">
+                <h3>Farmobot</h3>
+                <p>Cooperative third-person multiplayer action game, developed on Unreal Engine 5. Three players face waves of enemies attempting to destroy their entire village...</p>
+            </a>
+
+            <a href="../KidzOToys/KidzOToys.html" class="project-card">
+                <img src="images/Kidz-o-Toys_Logo.png" alt="FarmoKids">
+                <h3>Farm'o Toys</h3>
+                <p>A cooperative 3D shooter game. You play as two toy robots...</p>
+            </a>
+
+            <a href="../Pawsome/Pawsome.html" class="project-card">
+                <img src="images/pawsome.png" alt="pawsome">
+                <h3>PawSome</h3>
+                <p>In Pawsome, enhance your living room, the den of your small Instagram star creatures...</p>
+            </a>
+
+            <a href="../Supertag/Supertag.html" class="project-card">
+                <img src="images/SuperTag.png" alt="SuperTag">
+                <h3>SuperTag</h3>
+                <p>SuperTag is a track-based game on Unreal Engine...</p>
+            </a>
+
+        </div>
+    </section>
+
+<!--
+/* ===================
+   Download
+   =================== */-->
+
+    <section id="download">
+        <h2>Download Now !</h2>
+        <a href="javascript:void(0);" class="download-btn" onclick="showDownloadPopup()">Start Farming</a>
+        <!-- Pop-up caché par défaut -->
+        <div id="download-popup" class="popup">
+            <p>The game is not available at the moment</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+
+        <!-- Audio caché -->
+        <audio id="error-sound">
+            <source src="audio/error.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+<!--
+/* ===================
+   Team
+   =================== */-->
+
+    <section id="team">
+        <h2>TEAM</h2>
+        <div class="team-container">
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/tlabyt/" target="_blank">
+                    <img src="images/theodore.png" alt="Théodore Labyt">
+                </a>
+                <h3>THÉODORE LABYT</h3>
+                <p>Producer</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/guillaume-rogé-74600826a/" target="_blank">
+                    <img src="images/guillaume.png" alt="Guillaume Roge">
+                </a>
+                <h3>GUILLAUME ROGE</h3>
+                <p>Technical Game Designer</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/matis-duperray-b9063b179/" target="_blank">
+                    <img src="images/matis.png" alt="Matis Duperray">
+                </a>
+                <h3>MATIS DUPERRAY</h3>
+                <p>Game Designer & Sound Designer/Composer</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/timothe-huerre" target="_blank">
+                    <img src="images/timothe.png" alt="Timothé Huerre">
+                </a>
+                <h3>TIMOTHÉ HUERRE</h3>
+                <p>System Designer & Vision Owner</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/antoine-leroux-4689a4202/" target="_blank">
+                    <img src="images/antoine.png" alt="Antoine Leroux">
+                </a>
+                <h3>ANTOINE LEROUX</h3>
+                <p>3C Designer</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/tao-pecqueriaux" target="_blank">
+                    <img src="images/tao.png" alt="Tao Pecqueriaux">
+                </a>
+                <h3>TAO PECQUERIAUX</h3>
+                <p>Environment Artist & Art Lead</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/marco-lando-522b5122b/" target="_blank">
+                    <img src="images/marco.png" alt="Marco Lando">
+                </a>
+                <h3>MARCO LANDO</h3>
+                <p>Technical Artist & Art Director</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/quentin-kerihello" target="_blank">
+                    <img src="images/quentin.png" alt="Quentin Kerihello">
+                </a>
+                <h3>QUENTIN KERIHELLO</h3>
+                <p>3D Artist & Vehicle Artist</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/jean-baptiste-oses-8b712a237/" target="_blank">
+                    <img src="images/jeanbaptiste.png" alt="Jean-Baptiste Oses">
+                </a>
+                <h3>JEAN-BAPTISTE OSES</h3>
+                <p>Lead Game Programmer & Network Programmer</p>
+            </div>
+
+            <div class="team-member">
+                <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+                    <img src="images/kevin.png" alt="Kevin Delcroix">
+                </a>
+                <h3>KEVIN DELCROIX</h3>
+                <p>Gameplay Programmer</p>
+            </div>
+
+        </div>
+    </section>
+
+<!--
+/* ===================
+   Footer
+   =================== */-->
+
+    <footer>
+        <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
