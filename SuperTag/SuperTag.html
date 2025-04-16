@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperTag</title>
+    <link rel="icon" type="image/x-icon" href="images/SuperTag.ico">
+    <link rel="stylesheet" href="SuperTag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--
+/* ===================
+   Header
+   =================== */-->
+
+    <header>
+        <a href="#">
+            <img src="images/SuperTagLogo.png" alt="Farmobot Logo" id="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#StGoal">Game Rules</a></li>
+          	<li><a href="#StGameplay">Gameplay</a></li>
+          	<li><a href="#my-work">My Work</a></li>
+          	<li><a href="#other-projects">Other projects</a></li>
+          	<li><a href="#download">Try Game</a></li>
+            	<li><a href="#team">Équipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--
+/* ===================
+   Goal
+   =================== */-->
+
+    <section id="StGoal">
+        <h2>What's the game about ?</h2>
+        <p>SuperTag is a fast-paced first-person game where players play a competitive 1 vs 1 game of tag in different arenas with parkour movements and a grappling hook !</p>
+        <img src="images/SuperTagFullLogo.png" alt="Capture d'écran de Farmobot">
+        <p>The player takes control of a participant in this virtual reality game that takes place every 4 years as a new addition to the Olympic games. The rules are simple: Tag your opponent by outmaneuvering them to claim victory.</p>
+        <img src="images/SuperTag.png" alt="Capture d'écran de Farmobot">
+    </section>
+
+<!--
+/* ===================
+   Gameplay
+   =================== */-->	
+
+    <section id="StGameplay">
+        <h2>Gameplay</h2>
+        <p>Here you can see a game between two players (Arthur & Bastien) who have mastered the basic controls.</p>
+        <div class="video-container">
+            <div class="video-overlay">
+                <button class="play-button">▶</button>
+            </div>
+            <iframe src="https://www.youtube.com/embed/l-UapSdijeg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        </div>
+    </section>
+
+<!--
+/* ===================
+   My Work
+   =================== */-->
+
+    <section id="my-work">
+        <h2>My Work on the Project</h2>
+        <article>
+            <p>Super Tag was my very first team-based video game project. It was also my first time using Unreal Engine 4, as well as my first steps into several key technical areas: networking, source control, and more generally, collaborative development on a fully-featured engine. In short, everything was new to me !</p>
+            <h3>Getting Started as a Gameplay Programmer</h3>
+            <p>My very first task was to implement a grappling hook system fully functional in networked multiplayer. I took more time than expected to complete it, but in hindsight, that time was essential. It allowed me to truly understand how the engine works, to get comfortable with multiplayer logic, and—most importantly—to lay a solid foundation for the rest of the project.</p>
+            <h3>Exploring New Gameplay Mechanics</h3>
+            <p>Once the grappling system was up and running, I started working on more complex gameplay mechanics. Among them were interactive poles designed to give players new movement options:</p>
+            <ul>
+                <li>When a pole was vertical, the player could grab onto it to perform a sharp 90-degree turn.</li>
+                <li>When horizontal, it served as a pivot point to reach distant platforms without using the grappling hook.</li>
+            </ul>
+            <p>Although these features were successfully implemented, their integration into the game flow wasn’t ideal—they ended up slowing the player down rather than enhancing movement. This led me to rethink their value from a gameplay perspective.</p>
+            <h3>Additional Contributions</h3>
+            <p>Later on, I worked on laser traps that added a new layer of tension and gave players a way to troll or outsmart their opponents, while also enriching the level design. I also had the chance to explore UI development—a field I had never touched before—which helped me broaden my skill set even further..</p>
+        </article>
+        <h3>Conclusion</h3>
+        <p>Working on Super Tag was a truly formative experience. It pushed me out of my comfort zone, taught me the fundamentals of multiplayer gameplay, team collaboration for a video game, and Unreal Engine 4, and gave me the confidence to tackle complex systems from scratch. This project marked the beginning of my journey as a gameplay programmer—and laid the groundwork for everything I’ve built since.</p>
+        <img src="images/ST.png" alt="Capture d'écran de Farmobot">
+    </section>
+
+<!--
+/* ===================
+   Other Projects
+   =================== */-->
+
+    <section id="other-projects" class = "other-projects">
+        <h2>My Other Projects</h2>   
+        <div class="projects-container" id="carouselTrack">
+
+            <a href="../WTW/WTW.html" class="project-card">
+                <img src="images/WTW_Hero.png" alt="Wall Town Wonders">
+                <h3>Wall Town Wonders</h3>
+                <p>Wall Town Wonders is a mixed reality game that transforms your living room into a lively miniature city. Help colorful characters build their world through...</p>
+            </a>
+
+            <a href="../Farmobot/Farmobot.html" class="project-card">
+                <img src="images/Farmobot_Logo.png" alt="FarmoBot">
+                <h3>Farmobot</h3>
+                <p>Cooperative third-person multiplayer action game, developed on Unreal Engine 5. Three players face waves of enemies attempting to destroy their entire village...</p>
+            </a>
+
+            <a href="../KidzOToys/KidzOToys.html" class="project-card">
+                <img src="images/Kidz-o-Toys_Logo.png" alt="FarmoKids">
+                <h3>Farm'o Toys</h3>
+                <p>A cooperative 3D shooter game. You play as two toy robots...</p>
+            </a>
+
+            <a href="../Pawsome/Pawsome.html" class="project-card">
+                <img src="images/pawsome.png" alt="pawsome">
+                <h3>PawSome</h3>
+                <p>In Pawsome, enhance your living room, the den of your small Instagram star creatures...</p>
+            </a>
+
+            <a href="../Supertag/Supertag.html" class="project-card">
+                <img src="images/SuperTag.png" alt="SuperTag">
+                <h3>SuperTag</h3>
+                <p>SuperTag is a track-based game on Unreal Engine...</p>
+            </a>
+
+        </div>
+    </section>
+
+<!--
+/* ===================
+   Download
+   =================== */-->
+
+    <section id="download">
+        <h2>Download Now !</h2>
+        <a href="javascript:void(0);" class="download-btn" onclick="showDownloadPopup()">Try Now</a>
+        <!-- Pop-up caché par défaut -->
+        <div id="download-popup" class="popup">
+            <p>The game is not available at the moment</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+
+        <!-- Audio caché -->
+        <audio id="error-sound">
+            <source src="audio/error.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+
+<!--
+/* ===================
+   Team
+   =================== */-->
+
+<section id="team">
+    <h2>TEAM</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/arthur-galland/" target="_blank">
+                <img src="images/arthur.png" alt="Théodore Labyt">
+            </a>
+
+            <h3>ARTHUR GALLAND</h3>
+            <p>Producer / Game & Level Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/timothe-huerre" target="_blank">
+                <img src="images/timothe.png" alt="Timothé Huerre">
+            </a>
+            <h3>TIMOTHÉ HUERRE</h3>
+            <p>Game & UI/UX Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/bastienprigent/" target="_blank">
+                <img src="images/bastien.png" alt="Antoine Leroux">
+            </a>
+            <h3>BASTIEN PRIGENT</h3>
+            <p>Game & 3C & Level Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/luana-tran-nguyen-302433207" target="_blank">
+                <img src="images/luana.png" alt="Tao Pecqueriaux">
+            </a>
+            <h3>LUANA TRAN NGUYEN</h3>
+            <p>Sound & Game Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/michael-abid/" target="_blank">
+                <img src="images/michael.png" alt="Jean-Baptiste Oses">
+            </a>
+            <h3>MICHAEL ABID</h3>
+            <p>Lead Programmer / Controller-Network</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+                <img src="images/kevin.png" alt="Kevin Delcroix">
+            </a>
+            <h3>KEVIN DELCROIX</h3>
+            <p>Gameplay Programmer</p>
+        </div>
+    </div>
+</section>
+
+<!--
+/* ===================
+   Footer
+   =================== */-->
+
+    <footer>
+	<img src="images/OrangeTagger.png" alt="Tagger">
+        <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
+	<img src="images/BlueRunner.png" alt="Runner">
+    </footer>
+
+<!--
+/* ===================
+   Particles
+   =================== */-->
+
+    <div class="particles">
+        <!-- Génère des particules bleues et orange -->
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle orange" style="left: 20%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 35%; animation-delay: 4s;"></div>
+        <div class="particle orange" style="left: 50%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 65%; animation-delay: 3s;"></div>
+        <div class="particle orange" style="left: 80%; animation-delay: 5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 6s;"></div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
