@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidz'o Toys</title>
+<link rel="icon" type="image/x-icon" href="images/KidzOToys.ico">
+    <link rel="stylesheet" href="KidzOToys.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<header>
+    		<a href="#">
+        		<img src="images/KidzOToys_Logo.png" alt="Farmobot Logo" id="logo">
+    		</a>
+    		<nav>
+        		<ul>
+            			<li><a href="../index.html">Accueil</a></li>
+          			<li><a href="#StGoal">Game Rules</a></li>
+          			<li><a href="#StGameplay">Gameplay</a></li>
+          			<li><a href="#my-work">My Work</a></li>
+          			<li><a href="#other-projects">Other projects</a></li>
+          			<li><a href="#download">Try Game</a></li>
+            			<li><a href="#team">Équipe</a></li>
+        		</ul>
+    		</nav>
+	</header>
+
+
+    <section id="StGoal">
+        <h2>What's the game about ?</h2>
+        <p>SYou play as two mega-robots powered by the imagination of two children. Collaborate to find your way through a toy-filled world to reach the magnificent castle.</p>
+        <img src="images/weapons.png" alt="Capture d'écran de Farmobot">
+        <p>Use your weapons, the "maxitoys", which will evolve in wacky ways throughout the adventure to defeat your enemies, the evil toy-soldiers. Explore a miniature world where you can make your weapons evolve until they become overpowered, and help each other to defeat waves of enemies.
+
+The game is a twin-stick shooter, designed for PC with a two-player co-op mode. It features a top-down shared view and can be played with a gamepad.</p>
+    <img src="images/KidzOToys_Logo.png" alt="Capture d'écran de Farmobot">
+    </section>
+	
+
+    <section id="StGameplay">
+        <h2>Gameplay</h2>
+        <p>Below, you can get a glimpse of the gameplay. The game is played by two players, each using their own controller connected locally. Feel free to download the game and give it a try.</p>
+ <div class="video-container">
+    <div class="video-overlay">
+        <button class="play-button">▶</button>
+    </div>
+    <iframe src="https://www.youtube.com/embed/tpaLkDDXHSA" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+    </section>
+
+
+<section id="my-work">
+  <h2>My Work on the Project</h2>
+
+  <article>
+        <h3>Kidz’o Toys - Master’s Project Prototype</h1>
+        <p>
+            This game was developed as part of my master's degree in game development. We had one week to produce a game prototype as a team, with the primary goal being to establish a strong bond within the team that would accompany us throughout our 5th year of studies.
+        </p>
+        <p>
+            From the very beginning, we decided to create a <strong>twin-stick shooter</strong> set in a childlike universe. This choice of genre was a way to bring fun mechanics to a colorful and playful world.
+        </p>
+
+    <div class="soldier-images">
+      <img src="images/soldier1.png" alt="Capture d'écran de Farmobot">
+      <img src="images/soldier2.png" alt="Capture d'écran de Farmobot">
+      <img src="images/soldier3.png" alt="Capture d'écran de Farmobot">
+    </div>
+
+        <h3>My Role as Gameplay Programmer</h2>
+        <p>
+            As a <strong>gameplay programmer</strong>, I was responsible for implementing various key features. One of the most notable mechanics I worked on was the <strong>double lever doors</strong>: these doors require both players to interact with separate levers simultaneously within a short time frame to open. This mechanic was designed to encourage <strong>teamwork</strong>, as both players must coordinate and act quickly.
+        </p>
+        <p>
+            I also implemented the <strong>pressure plates</strong>, which are only activated when the first plate is triggered, revealing the next one. This system also encourages collaboration, as one player must remain on the plate while the other progresses, creating moments of strategy and cooperation.
+        </p>
+        <p>
+            Additionally, I worked on the integration of the game's various <strong>weapons</strong>. Each weapon has its own unique usage mechanics, and I ensured they were properly balanced and functional within the game world. The weapons evolve throughout the adventure, adding complexity and excitement as players progress.
+        </p>
+        <p>
+            A fun addition to the game is the <strong>Soda Trap</strong> (formerly known as the "Coke Trap"). This is a spilled soda that creates a slippery hazard on the ground, slowing down player movement when they step into it. Since the game is set in a toy world and features cola as part of the environment, it felt fitting to have a playful, yet challenging obstacle like this to add variety to the gameplay. Players must be careful not to get stuck in these traps while navigating the toy world.
+        </p>
+
+        <h3>Key Technical Details</h2>
+        <ul>
+            <li>
+                <strong>Double Lever Doors:</strong>  
+                This feature required a <strong>timed synchronization</strong> system. I implemented a <strong>timer-based mechanic</strong> that checks whether both players press their respective levers within a specific window of time. If successful, the door opens; if not, it remains closed. This required precise <strong>input handling</strong> and <strong>state synchronization</strong> for each player.
+            </li>
+            <li>
+                <strong>Pressure Plates:</strong>  
+                The pressure plate mechanic was designed using a <strong>trigger system</strong>. I programmed the plates to remain inactive unless the first one was activated, using a <strong>state-machine system</strong> that managed the progression. This ensures that the level design flows smoothly, with players needing to work together to proceed.
+            </li>
+            <li>
+                <strong>Soda Trap:</strong>  
+                The <strong>Soda Trap</strong> slows down the player who steps into the spilled cola by applying a <strong>deceleration force</strong> on the player’s movement. This was achieved by creating a specific <strong>collision detection system</strong> that triggers the slow-down effect upon contact. It adds a unique environmental hazard and requires players to time their movements carefully to avoid being caught in the trap.
+            </li>
+            <li>
+                <strong>Weapon Integration:</strong>  
+                For the weapons, I worked on the <strong>item management system</strong> to ensure smooth integration of different weapon types. Each weapon has a unique set of attributes (damage, range, etc.), and I implemented a dynamic system where weapons evolve and become more powerful over time. This involved using <strong>object pooling</strong> for efficiency and ensuring proper <strong>weapon swapping mechanics</strong> during gameplay.
+            </li>
+        </ul>
+
+
+        <h3>Conclusion</h2>
+        <p>
+            This week was a great opportunity for me to demonstrate my programming skills and to grow as a team player. I was able to contribute technically while also learning from my colleagues' expertise. It laid the foundation for the collaborative work we'll continue throughout the rest of our studies.
+        </p>
+    <img src="images/robot.png" alt="Capture d'écran de Farmobot">
+</section>
+
+    <section id="other-projects" class = "other-projects">
+        <h2>My Other Projects</h2>   
+        <div class="projects-container" id="carouselTrack">
+
+            <a href="../WTW/WTW.html" class="project-card">
+                <img src="images/WTW_Hero.png" alt="Wall Town Wonders">
+                <h3>Wall Town Wonders</h3>
+                <p>Wall Town Wonders is a mixed reality game that transforms your living room into a lively miniature city. Help colorful characters build their world through...</p>
+            </a>
+
+            <a href="../Farmobot/Farmobot.html" class="project-card">
+                <img src="images/Farmobot_Logo.png" alt="FarmoBot">
+                <h3>Farmobot</h3>
+                <p>Cooperative third-person multiplayer action game, developed on Unreal Engine 5. Three players face waves of enemies attempting to destroy their entire village...</p>
+            </a>
+
+            <a href="../KidzOToys/KidzOToys.html" class="project-card">
+                <img src="images/Kidz-o-Toys_Logo.png" alt="FarmoKids">
+                <h3>Farm'o Toys</h3>
+                <p>A cooperative 3D shooter game. You play as two toy robots...</p>
+            </a>
+
+            <a href="../Pawsome/Pawsome.html" class="project-card">
+                <img src="images/pawsome.png" alt="pawsome">
+                <h3>PawSome</h3>
+                <p>In Pawsome, enhance your living room, the den of your small Instagram star creatures...</p>
+            </a>
+
+            <a href="../Supertag/Supertag.html" class="project-card">
+                <img src="images/SuperTag.png" alt="SuperTag">
+                <h3>SuperTag</h3>
+                <p>SuperTag is a track-based game on Unreal Engine...</p>
+            </a>
+
+        </div>
+    </section>
+
+<section id="download">
+    <h2>Download Now !</h2>
+
+    <a href="javascript:void(0);" class="download-btn" onclick="showDownloadPopup()">Start Farming</a>
+    
+
+<!-- Pop-up caché par défaut -->
+<div id="download-popup" class="popup">
+    <p>Le jeu n'est pas disponible pour le moment</p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+    <!-- Audio caché -->
+    <audio id="error-sound">
+        <source src="audio/error.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+
+<section id="team">
+    <h2>TEAM</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/tlabyt/" target="_blank">
+                <img src="images/theodore.png" alt="Théodore Labyt">
+            </a>
+            <h3>THÉODORE LABYT</h3>
+            <p>Producer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/guillaume-rogé-74600826a/" target="_blank">
+                <img src="images/guillaume.png" alt="Guillaume Roge">
+            </a>
+            <h3>GUILLAUME ROGE</h3>
+            <p>Technical Game Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/matis-duperray-b9063b179/" target="_blank">
+                <img src="images/matis.png" alt="Matis Duperray">
+            </a>
+            <h3>MATIS DUPERRAY</h3>
+            <p>Game Designer & Sound Designer/Composer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/timothe-huerre" target="_blank">
+                <img src="images/timothe.png" alt="Timothé Huerre">
+            </a>
+            <h3>TIMOTHÉ HUERRE</h3>
+            <p>System Designer & Vision Owner</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/antoine-leroux-4689a4202/" target="_blank">
+                <img src="images/antoine.png" alt="Antoine Leroux">
+            </a>
+            <h3>ANTOINE LEROUX</h3>
+            <p>3C Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/tao-pecqueriaux" target="_blank">
+                <img src="images/tao.png" alt="Tao Pecqueriaux">
+            </a>
+            <h3>TAO PECQUERIAUX</h3>
+            <p>Environment Artist & Art Lead</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/marco-lando-522b5122b/" target="_blank">
+                <img src="images/marco.png" alt="Marco Lando">
+            </a>
+            <h3>MARCO LANDO</h3>
+            <p>Technical Artist & Art Director</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/quentin-kerihello" target="_blank">
+                <img src="images/quentin.png" alt="Quentin Kerihello">
+            </a>
+            <h3>QUENTIN KERIHELLO</h3>
+            <p>3D Artist & Vehicle Artist</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/jean-baptiste-oses-8b712a237/" target="_blank">
+                <img src="images/jeanbaptiste.png" alt="Jean-Baptiste Oses">
+            </a>
+            <h3>JEAN-BAPTISTE OSES</h3>
+            <p>Lead Game Programmer & Network Programmer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+                <img src="images/kevin.png" alt="Kevin Delcroix">
+            </a>
+            <h3>KEVIN DELCROIX</h3>
+            <p>Gameplay Programmer</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
