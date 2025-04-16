@@ -211,7 +211,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-#modules img[src="images/Farmobot_ArtBook.png"] {
+#modules img[src="Images/Farmobot_ArtBook.png"] {
     border: 3px dashed rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     max-width: 100%;
@@ -383,7 +383,7 @@ text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7); /* Ajout du contour noir */
   transform: scale(1.03);     /* zoom léger au survol */
 }
 
-#my-work img[src="images/Farmobot_Mech.png"] {
+#my-work img[src="Images/Farmobot_Mech.png"] {
     max-width: 30%;
     height: auto;
     margin: 00px auto;          /* espace autour et centrage */
