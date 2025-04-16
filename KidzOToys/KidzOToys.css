@@ -398,41 +398,6 @@ text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9); /* Ajout du contour noir */
     transform: scale(1.1);
 }
 
-/* Styles du pop-up */
-#download-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 1000;
-    width: 300px;
-}
-
-#download-popup button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f39c12;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#download-popup button:hover {
-    background-color: #e67e22;
-}
-
-
-
-
-
 /* ===================
    Team
    =================== */
