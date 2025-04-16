@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsome</title>
+    <link rel="icon" type="image/x-icon" href="images/Paw.ico">
+    <link rel="stylesheet" href="Pawsome.css">
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+    </style>
+
+
+</head>
+<body>
+
+	<header>
+    		<a href="#">
+        		<img src="images/PawsomeLogo.png" alt="Farmobot Logo" id="logo">
+    		</a>
+    		<nav>
+        		<ul>
+            			<li><a href="../index.html">Accueil</a></li>
+          			<li><a href="#StGoal">Game Rules</a></li>
+          			<li><a href="#StGameplay">Gameplay</a></li>
+          			<li><a href="#my-work">My Work</a></li>
+          			<li><a href="#other-projects">Other projects</a></li>
+          			<li><a href="#download">Try Game</a></li>
+            			<li><a href="#team">Équipe</a></li>
+        		</ul>
+    		</nav>
+	</header>
+
+
+    <section id="StGoal">
+        <h2>What's the game about ?</h2>
+        <p>In Pawsome, upgrade your living room—the cozy lair of your adorable Instagram-famous creatures—by developing your cats' favorite activities. Doing so will make your cats more effective in turn-based arena battles against other players’ feline teams, all vying to dominate the world of Instagram.</p>
+        <img src="images/PawsomeLogo.png" alt="Capture d'écran de Farmobot">
+        <p>These little furballs will need to be equipped with their favorite toys, represented as cards used during arena showdowns.
+
+You’ll be able to collect a variety of cats inspired by real Instagram icons and trade them with your friends. Their effectiveness in the arena will be influenced by their actual visibility and popularity in the real-world Instagram universe.</p>
+    <img src="images/A_Cat.png" alt="Capture d'écran de Farmobot">
+    </section>
+
+<div class="floating-icons">
+  <img src="images/Paw.png" class="floating-icon" />
+  <img src="images/Fish.png" class="floating-icon" />
+  <!-- Répète autant que tu veux -->
+</div>
+
+
+    <section id="StGameplay">
+        <h2>Gameplay</h2>
+        <p>Pawsome is divided into two main gameplay phases:
+Living Room Phase
+Before and after battles, the player will have access to a HUB set in a cozy living room that serves as a habitat for the cats they’ve collected. During this phase, the player can prepare for the next fight by upgrading buildings using kibble in order to generate more resources and house more cats.
+
+To activate production buildings, the player must assign one of their cats to them."</p>
+    <div class="video-container">
+    <div class="video-overlay">
+        <button class="play-button">▶</button>
+    </div>
+    <iframe src="https://www.youtube.com/embed/bXstCkHrEOY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+	</div>
+
+ <p>Combat Phase
+During combat, players enter an 8x8 arena. In this phase, each player uses a deck of 8 cards. A coin flip determines who goes first. At the start of the match, each player can freely position their troops within 10 designated tiles.
+
+Players choose the turn order of their units (e.g., tank → DPS → healer), and this order remains fixed throughout the battle.
+
+The player always has 3 cards in hand. When there are no more cards in the draw pile, the discard pile is shuffled and becomes the new draw pile.
+
+Players can perform their actions in any order they wish: moving (limited by a number of tiles) and casting spells."</p>
+   <div class="video-container">
+    <div class="video-overlay">
+        <button class="play-button">▶</button>
+    </div>
+    <iframe src="https://www.youtube.com/embed/Tsuq9OgWdWg" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+	</div>
+    </section>
+
+
+<section id="my-work">
+  <h2>My Work on the Project</h2>
+
+  <article>
+  	<p>This game was developed as part of my master's degree in game development. We had two weeks to produce a prototype game in a team, based on a concept involving NFTs.
+    From the beginning, we landed on the idea of creating a universe centered around cats, with two main phases: a village that serves as the HUB, and a combat phase in an arena.
+    The goal was to use NFTs as unique representations of each cat, which could be healed, customized, traded, or used in battles.
+  </p>
+   <p>
+    Unity was already familiar to me, but this project allowed me to grow technically. I was mainly responsible for the following aspects:
+  </p>
+
+  <h3>🐾 Entity Management (Cats and Spells)</h3>
+  <p>
+    I implemented a flexible system to manage a variable number of cats and spells. Each cat had stats, affinities with certain buildings and spells, and its own visual representation.
+    These entities had to be <strong>dynamically instantiated</strong> in the UI, which pushed me to build a modular and scalable interface.
+  </p>
+
+  <h3>🖥️ User Interface (UI)</h3>
+  <p>
+    I moved from working with static interfaces to creating a <strong>responsive and adaptive UI</strong>, capable of reacting to an increasing number of cats and spells, and to real-time game events.
+    Key UI elements included:
+  </p>
+  <ul>
+    <li>Dynamic lists based on saved data</li>
+    <li>Smart UI refresh system (updates on data changes without performance loss)</li>
+    <li>Visual feedback for interactions (drag & drop, hover tooltips, transitions)</li>
+  </ul>
+
+  <h3>💾 Data Persistence</h3>
+  <p>
+    This was my first time implementing a save/load system between game sessions. I used a local <strong>JSON-based serialization system</strong> to:
+  </p>
+  <ul>
+    <li>Save stats, spells, upgraded buildings, and cat assignments</li>
+    <li>Restore the village state and UI on game launch</li>
+    <li>Track player progression like unlocked cats and building states</li>
+  </ul>
+
+  <h3>⚙️ Background Logic</h3>
+  <p>
+    Village buildings needed to continue producing resources while the player was away. I integrated a system based on the <strong>system clock</strong> to calculate elapsed time and generate resources accordingly when the game restarts.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    This project was highly educational. In just two weeks, I was able to:
+  </p>
+  <ul>
+    <li>Deepen my skills in dynamic and responsive UI development</li>
+    <li>Learn how to handle persistent data and multi-system interactions</li>
+    <li>Collaborate effectively with a team on a technically and creatively ambitious project</li>
+  </ul>
+  <p>
+    It also gave me a clearer understanding of the challenges related to progression systems and persistent gameplay, similar to mobile and management games.
+  </p>
+  <img src="images/Photo_Cat.png" alt="Capture d'écran de Farmobot">
+</section>
+
+    <section id="other-projects" class = "other-projects">
+        <h2>My Other Projects</h2>   
+        <div class="projects-container" id="carouselTrack">
+
+            <a href="../WTW/WTW.html" class="project-card">
+                <img src="images/WTW_Hero.png" alt="Wall Town Wonders">
+                <h3>Wall Town Wonders</h3>
+                <p>Wall Town Wonders is a mixed reality game that transforms your living room into a lively miniature city. Help colorful characters build their world through...</p>
+            </a>
+
+            <a href="../Farmobot/Farmobot.html" class="project-card">
+                <img src="images/Farmobot_Logo.png" alt="FarmoBot">
+                <h3>Farmobot</h3>
+                <p>Cooperative third-person multiplayer action game, developed on Unreal Engine 5. Three players face waves of enemies attempting to destroy their entire village...</p>
+            </a>
+
+            <a href="../KidzOToys/KidzOToys.html" class="project-card">
+                <img src="images/Kidz-o-Toys_Logo.png" alt="FarmoKids">
+                <h3>Farm'o Toys</h3>
+                <p>A cooperative 3D shooter game. You play as two toy robots...</p>
+            </a>
+
+            <a href="../Pawsome/Pawsome.html" class="project-card">
+                <img src="images/pawsome.png" alt="pawsome">
+                <h3>PawSome</h3>
+                <p>In Pawsome, enhance your living room, the den of your small Instagram star creatures...</p>
+            </a>
+
+            <a href="../Supertag/Supertag.html" class="project-card">
+                <img src="images/SuperTag.png" alt="SuperTag">
+                <h3>SuperTag</h3>
+                <p>SuperTag is a track-based game on Unreal Engine...</p>
+            </a>
+
+        </div>
+    </section>
+
+<section id="download">
+    <h2>Download Now !</h2>
+
+    <a href="javascript:void(0);" class="download-btn" onclick="showDownloadPopup()">Start Farming</a>
+    
+
+<!-- Pop-up caché par défaut -->
+<div id="download-popup" class="popup">
+    <p>Le jeu n'est pas disponible pour le moment</p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+    <!-- Audio caché -->
+    <audio id="error-sound">
+        <source src="audio/error.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+
+<section id="team">
+    <h2>TEAM</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/remisecher/" target="_blank">
+                <img src="images/remi.png" alt="Théodore Labyt">
+            </a>
+
+            <h3>RÉMI SÉCHER</h3>
+            <p>Producer / Game Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/timothe-huerre" target="_blank">
+                <img src="images/timothe.png" alt="Timothé Huerre">
+            </a>
+            <h3>TIMOTHÉ HUERRE</h3>
+            <p>Game Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/noe-blanc/" target="_blank">
+                <img src="images/noe.png" alt="Antoine Leroux">
+            </a>
+            <h3>NOÉ BLANC</h3>
+            <p>Game Designer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/cynderiaopus" target="_blank">
+                <img src="images/marion.png" alt="Tao Pecqueriaux">
+            </a>
+            <h3>MARION BÉTREMIEUX</h3>
+            <p>UI Artist</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/youmna-sahab-" target="_blank">
+                <img src="images/youmna.png" alt="Tao Pecqueriaux">
+            </a>
+            <h3>YOUMNA Sahab</h3>
+            <p>FX Artist</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/yanis-habib/" target="_blank">
+                <img src="images/yanis.png" alt="Jean-Baptiste Oses">
+            </a>
+            <h3>YANIS HABIB</h3>
+            <p>3D Artist & Animator</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/nicolas-capelier/" target="_blank">
+                <img src="images/nicolas.png" alt="Jean-Baptiste Oses">
+            </a>
+            <h3>NICOLAS CAPELIER</h3>
+            <p>Game Designer & Lead Programmer</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+                <img src="images/kevin.png" alt="Kevin Delcroix">
+            </a>
+            <h3>KEVIN DELCROIX</h3>
+            <p>Gameplay Programmer</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
+</footer>
+
+<div class="footer-icons">
+  <img src="images/Portrait_Coby.png" alt="Coby">
+  <img src="images/Portrait_Hamilton.png" alt="Hamilton">
+  <img src="images/Portrait_Venus.png" alt="Venus">
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
