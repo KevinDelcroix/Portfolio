@@ -1,3 +1,7 @@
+/* ===================
+   Body
+   =================== */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,11 +10,47 @@ body {
     color: #ffffff;
 }
 
+
+/* ===================
+   Header
+   =================== */
+
 header {
     text-align: center;
     padding: 50px 20px;
     background: #1f1f1f;
 }
+
+
+/* ===================
+   CV
+   =================== */
+
+.cv-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cv-buttons a {
+    background: #f39c12;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cv-buttons a:hover {
+    background: #005fcc;
+}
+
+
+/* ===================
+   Nav
+   =================== */
 
 nav ul {
     list-style: none;
@@ -28,11 +68,75 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Animation du menu */
+nav ul li {
+    transition: transform 0.2s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+
+/* ===================
+   General Section
+   =================== */
+
 section {
     padding: 40px;
     max-width: 800px;
     margin: auto;
 }
+
+/* Animation d’apparition des sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Rendre les liens interactifs */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================
+   About Me
+   =================== */
+
+#about h2 {
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+#typing-text {
+    font-size: 18px;
+    white-space: pre-line; /* Respecte les sauts de ligne */
+    overflow: hidden;
+    display: inline-block;
+    position: relative; /* Permet de positionner le curseur */
+}
+
+#typing-text::after {
+    content: "|"; /* Curseur clignotant */
+    position: absolute;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
 
 /* ===================
    Projects
@@ -50,7 +154,8 @@ section {
     color: #f39c12;
     font-size: 2.5em;
     margin-bottom: 40px;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9); /* Ajout du contour noir */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
 .projects-container {
@@ -105,104 +210,6 @@ section {
   color: #ffffff;
 }
 
-
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #f39c12;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.experience,
-.skills,
-.hobbies-list,
-.languages-list {
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #f39c12;
-}
-
-.date {
-  font-size: 0.875rem;
-  color: #7f8c8d;
-  margin-top: 5px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 8px;
-  font-size: 1rem;
-  color: #555;
-}
-
-.skills div {
-  margin-bottom: 15px;
-}
-
-.skills h4 {
-  font-weight: bold;
-  font-size: 1rem;
-  color: #3498db;
-  margin-bottom: 5px;
-}
-
-.degree-title {
-  font-weight: bold;
-  font-size: 1.125rem;
-}
-
-.degree-info {
-  font-size: 1rem;
-  color: #7f8c8d;
-}
-
-.hobbies-list li,
-.languages-list li {
-  font-size: 1rem;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  .portfolio-section {
-    padding: 15px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.125rem;
-  }
-}
-
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 10px;
-    background: #1f1f1f;
-    margin: 5px 0;
-    border-radius: 5px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 /* Effet de survol sur les projets */
 .project {
     background: #1f1f1f;
@@ -217,45 +224,149 @@ a {
     box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8);
 }
 
-/* Animation d’apparition des sections */
-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+
+/* ===================
+   Experience
+   =================== */
+
+.experience h2{
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+.experience h3{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* ===================
+   Programming Skills
+   =================== */
+
+.programming-skills h2{
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.programming-skills div {
+  margin-bottom: 15px;
+}
+
+.programming-skills h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+
+/* ===================
+   Education
+   =================== */
+
+.education h2{
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.education h3{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.education .degree-info {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+.education a {
+    color: #f39c12;
+    text-decoration: none;
 }
 
 /* Rendre les liens interactifs */
-a:hover {
+.education a:hover {
     text-decoration: underline;
 }
 
-/* Animation du menu */
-nav ul li {
+
+/* ===================
+   Hobbies
+   =================== */
+
+.hobbies h2{
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* ===================
+   Languages
+   =================== */
+
+.languages h2{
+    text-align: center;
+    color: #f39c12;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* ===================
+   Contact
+   =================== */
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+#contact ul li a img {
+    width: 100%;
+    height: auto;
     transition: transform 0.2s;
 }
 
-nav ul li:hover {
+#contact ul li a:hover img {
     transform: scale(1.1);
 }
-#typing-text {
-    font-size: 18px;
-    white-space: pre-line; /* Respecte les sauts de ligne */
-    overflow: hidden;
-    display: inline-block;
-    position: relative; /* Permet de positionner le curseur */
-}
 
-#typing-text::after {
-    content: "|"; /* Curseur clignotant */
-    position: absolute;
-    animation: blink 0.8s infinite;
-}
 
-@keyframes blink {
-    50% { opacity: 0; }
-}
