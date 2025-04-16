@@ -22,7 +22,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('images/parchment.png') no-repeat center center;
+  background: url('Images/parchment.png') no-repeat center center;
   background-size: cover;
   opacity: 0.18;
   z-index: -1;
@@ -334,7 +334,7 @@ text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.3); /* Ajout du contour noir */
   transform: scale(1.03);     /* zoom léger au survol */
 }
 
-#my-work img[src="images/WTW_Heros.png"] {
+#my-work img[src="Images/WTW_Heros.png"] {
     max-width: 70%;
     height: auto;
     margin: 00px auto;          /* espace autour et centrage */
@@ -343,7 +343,7 @@ text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.3); /* Ajout du contour noir */
     transition: none;
 }
 
-#my-work img[src="images/WTW_Heros.png"]:hover {
+#my-work img[src="Images/WTW_Heros.png"]:hover {
     transform: scale(1);
 }
 
