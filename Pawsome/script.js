@@ -1,5 +1,5 @@
   const container = document.querySelector('.floating-icons');
-  const icons = ['images/Paw.png', 'images/Fish.png'];
+  const icons = ['Images/Paw.png', 'Images/Fish.png'];
 
   for (let i = 0; i < 20; i++) {
     const img = document.createElement('img');
