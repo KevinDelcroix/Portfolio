@@ -14,25 +14,44 @@
 </head>
 <body>
 
-	<header>
-    		<a href="#">
-        		<img src="Images/PawsomeLogo.png" alt="Farmobot Logo" id="logo">
-    		</a>
-    		<nav>
-        		<ul>
-            			<li><a href="../index.html">Accueil</a></li>
-          			<li><a href="#StGoal">Game Rules</a></li>
-          			<li><a href="#StGameplay">Gameplay</a></li>
-          			<li><a href="#my-work">My Work</a></li>
-          			<li><a href="#other-projects">Other projects</a></li>
-          			<li><a href="#download">Try Game</a></li>
-            			<li><a href="#team">Équipe</a></li>
-        		</ul>
-    		</nav>
-	</header>
+<!--
+/* ===================
+   Header
+   =================== */-->
 
 
-    <section id="StGoal">
+<header>
+  <div class="header-container">
+    <div class="intro">
+      <a href="#">
+        <img src="Images/PawsomeLogo.png" alt="Farmobot Logo" id="logo">
+      </a>
+    </div>
+    <!-- Bouton hamburger (mobile only) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      &#9776;
+    </button>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#Rules">Game Rules</a></li>
+      <li><a href="#Gameplay">Gameplay</a></li>
+      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#other-projects">Other projects</a></li>
+      <li><a href="#download">Try Game</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
+</header>
+	
+<!--
+/* ===================
+   Game Rules
+   =================== */-->
+
+    <section id="Rules">
         <h2>What's the game about ?</h2>
         <p>In Pawsome, upgrade your living room—the cozy lair of your adorable Instagram-famous creatures—by developing your cats' favorite activities. Doing so will make your cats more effective in turn-based arena battles against other players’ feline teams, all vying to dominate the world of Instagram.</p>
         <img src="Images/PawsomeLogo.png" alt="Capture d'écran de Farmobot">
@@ -48,8 +67,12 @@ You’ll be able to collect a variety of cats inspired by real Instagram icons a
   <!-- Répète autant que tu veux -->
 </div>
 
+<!--
+/* ===================
+   Gameplay
+   =================== */-->
 
-    <section id="StGameplay">
+    <section id="Gameplay">
         <h2>Gameplay</h2>
         <p>Pawsome is divided into two main gameplay phases:
 Living Room Phase
@@ -87,6 +110,10 @@ Players can perform their actions in any order they wish: moving (limited by a n
 	</div>
     </section>
 
+<!--
+/* ===================
+   My Work
+   =================== */-->
 
 <section id="my-work">
   <h2>My Work on the Project</h2>
@@ -147,6 +174,11 @@ Players can perform their actions in any order they wish: moving (limited by a n
   <img src="Images/Photo_Cat.png" alt="Capture d'écran de Farmobot">
 </section>
 
+<!--
+/* ===================
+   Other Projects
+   =================== */-->
+
     <section id="other-projects" class = "other-projects">
         <h2>My Other Projects</h2>   
         <div class="projects-container" id="carouselTrack">
@@ -177,7 +209,12 @@ Players can perform their actions in any order they wish: moving (limited by a n
 
         </div>
     </section>
-
+	
+<!--
+/* ===================
+   Download
+   =================== */-->
+	
 <section id="download">
     <h2>Download Now !</h2>
 
@@ -196,6 +233,12 @@ Players can perform their actions in any order they wish: moving (limited by a n
     </audio>
 </section>
 
+
+<!--
+/* ===================
+   Team
+   =================== */-->
+	
 
 <section id="team">
     <h2>TEAM</h2>
@@ -258,7 +301,7 @@ Players can perform their actions in any order they wish: moving (limited by a n
         </div>
 
         <div class="team-member">
-            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+            <a href="https://www.linkedin.com/in/kevindelcroix" target="_blank">
                 <img src="Images/kevin.png" alt="Kevin Delcroix">
             </a>
             <h3>KEVIN DELCROIX</h3>
@@ -267,6 +310,11 @@ Players can perform their actions in any order they wish: moving (limited by a n
     </div>
 </section>
 
+<!--
+/* ===================
+   Footer
+   =================== */-->
+	
 <footer>
   <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
 </footer>
@@ -280,5 +328,11 @@ Players can perform their actions in any order they wish: moving (limited by a n
 
 
 <script src="script.js"></script>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('navbar').classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
