@@ -19,25 +19,34 @@
    Header
    =================== */-->
 
-	<header>
-    		<a href="#">
-        		<img src="Images/WTW_Logo.png" alt="WTW Logo" id="logo">
-    		</a>
-    		<nav>
-        		<ul>
-            			<li><a href="../index.html">Accueil</a></li>
-            			<li><a href="#trailer">Trailer</a></li>
-          			<li><a href="#Acknowledgments">Acknowledgments</a></li>
-          			<li><a href="#Studio">Studio</a></li>
-          			<li><a href="#Goal">What's the game about?</a></li>
-          			<li><a href="#Gameplay">Gameplay</a></li>
-          			<li><a href="#my-work">My Work</a></li>
-          			<li><a href="#other-projects">Other projects</a></li>
-          			<li><a href="#download">Try Game</a></li>
-            			<li><a href="#team">Équipe</a></li>
-        		</ul>
-    		</nav>
-	</header>
+<header>
+  <div class="header-container">
+    <div class="intro">
+      <a href="#">
+        <img src="Images/WTW_Logo.png" alt="WTW Logo" id="logo">
+      </a>
+    </div>
+    <!-- Bouton hamburger (mobile only) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      &#9776;
+    </button>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="#trailer">Trailer</a></li>
+      <li><a href="#Acknowledgments">Acknowledgments</a></li>
+      <li><a href="#Studio">Studio</a></li>
+      <li><a href="#Goal">What's the game about?</a></li>
+      <li><a href="#Gameplay">Gameplay</a></li>
+      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#other-projects">Other projects</a></li>
+      <li><a href="#download">Try Game</a></li>
+    </ul>
+  </nav>
+</header>
+
 
 <!--
 /* ===================
@@ -234,6 +243,13 @@ I am now convinced of my professional direction and more motivated than ever to 
     </footer>
 
 <script src="script.js"></script>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('navbar').classList.toggle('active');
+  });
+</script>
+
 
 </body>
 </html>
