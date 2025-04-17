@@ -14,25 +14,44 @@
 </head>
 <body>
 
-	<header>
-    		<a href="#">
-        		<img src="Images/KidzOToys_Logo.png" alt="Farmobot Logo" id="logo">
-    		</a>
-    		<nav>
-        		<ul>
-            			<li><a href="../index.html">Accueil</a></li>
-          			<li><a href="#StGoal">Game Rules</a></li>
-          			<li><a href="#StGameplay">Gameplay</a></li>
-          			<li><a href="#my-work">My Work</a></li>
-          			<li><a href="#other-projects">Other projects</a></li>
-          			<li><a href="#download">Try Game</a></li>
-            			<li><a href="#team">Équipe</a></li>
-        		</ul>
-    		</nav>
-	</header>
+<!--
+/* ===================
+   Header
+   =================== */-->
 
 
-    <section id="StGoal">
+<header>
+  <div class="header-container">
+    <div class="intro">
+      <a href="#">
+        <img src="Images/KidzOToys_Logo.png" alt="Farmobot Logo" id="logo">
+      </a>
+    </div>
+    <!-- Bouton hamburger (mobile only) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      &#9776;
+    </button>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#Rules">Game Rules</a></li>
+      <li><a href="#Gameplay">Gameplay</a></li>
+      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#other-projects">Other projects</a></li>
+      <li><a href="#download">Try Game</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!--
+/* ===================
+   Game Rules
+   =================== */-->
+	
+    <section id="Rules">
         <h2>What's the game about ?</h2>
         <p>SYou play as two mega-robots powered by the imagination of two children. Collaborate to find your way through a toy-filled world to reach the magnificent castle.</p>
         <img src="Images/weapons.png" alt="Capture d'écran de Farmobot">
@@ -41,9 +60,13 @@
 The game is a twin-stick shooter, designed for PC with a two-player co-op mode. It features a top-down shared view and can be played with a gamepad.</p>
     <img src="Images/KidzOToys_Logo.png" alt="Capture d'écran de Farmobot">
     </section>
-	
 
-    <section id="StGameplay">
+<!--
+/* ===================
+   Gameplay
+   =================== */-->
+
+    <section id="Gameplay">
         <h2>Gameplay</h2>
         <p>Below, you can get a glimpse of the gameplay. The game is played by two players, each using their own controller connected locally. Feel free to download the game and give it a try.</p>
  <div class="video-container">
@@ -58,7 +81,11 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
 
     </section>
 
-
+<!--
+/* ===================
+   My Work
+   =================== */-->
+	
 <section id="my-work">
   <h2>My Work on the Project</h2>
 
@@ -118,7 +145,12 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
         </p>
     <img src="Images/robot.png" alt="Capture d'écran de Farmobot">
 </section>
-
+	
+<!--
+/* ===================
+   Other Projects
+   =================== */-->
+	
     <section id="other-projects" class = "other-projects">
         <h2>My Other Projects</h2>   
         <div class="projects-container" id="carouselTrack">
@@ -149,7 +181,12 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
 
         </div>
     </section>
-
+	
+<!--
+/* ===================
+   Download
+   =================== */-->
+	
 <section id="download">
     <h2>Download Now !</h2>
 
@@ -157,7 +194,11 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
     
 </section>
 
-
+<!--
+/* ===================
+   Team
+   =================== */-->
+	
 <section id="team">
     <h2>TEAM</h2>
     <div class="team-container">
@@ -234,7 +275,7 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
         </div>
 
         <div class="team-member">
-            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+            <a href="https://www.linkedin.com/in/kevindelcroix" target="_blank">
                 <img src="Images/kevin.png" alt="Kevin Delcroix">
             </a>
             <h3>KEVIN DELCROIX</h3>
@@ -243,9 +284,20 @@ The game is a twin-stick shooter, designed for PC with a two-player co-op mode. 
     </div>
 </section>
 
+<!--
+/* ===================
+   Footer
+   =================== */-->
+	
     <footer>
         <p>&copy; 2025 Kevin Delcroix. Tous droits réservés.</p>
     </footer>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('navbar').classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
