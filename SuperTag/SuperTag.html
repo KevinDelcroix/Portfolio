@@ -17,22 +17,31 @@
    Header
    =================== */-->
 
-    <header>
-        <a href="#">
-            <img src="Images/SuperTagLogo.png" alt="Farmobot Logo" id="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="#StGoal">Game Rules</a></li>
-          	<li><a href="#StGameplay">Gameplay</a></li>
-          	<li><a href="#my-work">My Work</a></li>
-          	<li><a href="#other-projects">Other projects</a></li>
-          	<li><a href="#download">Try Game</a></li>
-            	<li><a href="#team">Équipe</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <div class="header-container">
+    <div class="intro">
+      <a href="#">
+        <img src="Images/SuperTagLogo.png" alt="Farmobot Logo" id="logo">
+      </a>
+    </div>
+    <!-- Bouton hamburger (mobile only) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      &#9776;
+    </button>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#StGoal">Game Rules</a></li>
+      <li><a href="#StGameplay">Gameplay</a></li>
+      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#other-projects">Other projects</a></li>
+      <li><a href="#download">Try Game</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
+</header>
 
 <!--
 /* ===================
@@ -196,7 +205,7 @@
         </div>
 
         <div class="team-member">
-            <a href="https://www.linkedin.com/in/kevin-delcroix" target="_blank">
+            <a href="https://www.linkedin.com/in/kevindelcroix" target="_blank">
                 <img src="Images/kevin.png" alt="Kevin Delcroix">
             </a>
             <h3>KEVIN DELCROIX</h3>
@@ -233,6 +242,12 @@
     </div>
 
 <script src="script.js"></script>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('navbar').classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
